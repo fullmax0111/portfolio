@@ -8,52 +8,46 @@ import { Github, ExternalLink } from "lucide-react"
 
 const projects = [
   {
-    title: "NeuralSpeech",
-    description: "An end-to-end speech recognition and synthesis system powered by transformer models. Achieves state-of-the-art performance on multiple benchmarks with 30% lower latency than competitors.",
-    image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3",
-    tags: ["Python", "PyTorch", "HuggingFace", "FastAPI", "React", "Docker"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+    title: "AI Text Humanizer",
+    description: "The AI Text Humanizer is a specialized tool designed to transform machine-generated content into natural, human-like text while preserving the original meaning and intent. This project aims to bridge the gap between AI efficiency and human authenticity in written communication.",
+    image: "/images/project1.png",
+    tags: ["AI Agent", "LLM", "Prompt Engineering", "Humanizing AI"],
+    demo: "https://ai-text-humanizer.com/",
   },
   {
-    title: "ComputerVision Toolkit",
-    description: "A comprehensive library for computer vision tasks including object detection, segmentation, and tracking. Optimized for both cloud and edge deployment with TensorRT acceleration.",
-    image: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3",
-    tags: ["Python", "C++", "CUDA", "TensorRT", "OpenCV", "Docker"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+    title: "Messagin with AI",
+    description: "Mei’s technology upgrades messaging with AI, so people can better connect with each other. Our products have powered communications for over a million people and businesses by enabling AI in channels you already use, like SMS texting, phone calls, email, websites, and messenger apps. ",
+    image: "/images/project2.png",
+    tags: ["Android", "AI Agent", "Chatbot", "GenAI"],
+    demo: "https://textmei.com",
   },
   {
-    title: "Recommendation Engine",
-    description: "A scalable recommendation system for e-commerce platforms using collaborative filtering and deep learning. Increased user engagement by 25% and conversion rates by 18% in A/B testing.",
-    image: "https://images.unsplash.com/photo-1567095761054-7a02e69e5c43?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3",
-    tags: ["Python", "TensorFlow", "Apache Spark", "AWS", "Docker", "Kubernetes"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+    title: "Novmuser AI",
+    description: "NovmuserAI is an AI-powered writing assistant designed to enhance your novel creation process. It leverages AI agents to simulate a virtual writing team, helping you with novel planning, content generation, and seamless management of your novel's structure.",
+    image: "/images/project3.png",
+    tags: ["novmuserai", "AI Agent", "Prompt Engineering"],
+    demo: "https://novmuserai.com",
   },
   {
-    title: "FinancialML",
-    description: "A machine learning framework for financial time series forecasting, risk modeling, and algorithmic trading. Incorporates attention mechanisms and advanced regularization techniques.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3",
-    tags: ["Python", "PyTorch", "Pandas", "NumPy", "FastAPI", "React"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+    title: "Breadcrumb",
+    description: "Whether you’re serving multiple clients, departments, or stakeholders, our AI-powered platform automates personalized reporting so every account gets the insights they need.",
+    image: "/images/project4.png",
+    tags: ["Data analysis", "AI Agent", "Data Analysis", "Data Cleaning", "Embedding"],
+    demo: "https://www.breadcrumb.ai",
   },
   {
-    title: "MLOps Pipeline",
+    title: "Third Party Web",
     description: "A comprehensive MLOps platform for automating the entire machine learning lifecycle from data preparation to model deployment and monitoring.",
-    image: "https://images.unsplash.com/photo-1551033406-611cf9a28f67?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3",
-    tags: ["Python", "Docker", "Kubernetes", "Airflow", "MLflow", "Terraform", "AWS"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+    image: "/images/project5.png",
+    tags: ["Data analysis", "Data Visualization", "javascript", "httparchive"],
+    demo: "https://www.thirdpartyweb.today/",
   },
   {
-    title: "Healthcare AI",
-    description: "An AI system for medical image analysis that assists radiologists in detecting abnormalities. Achieved 92% accuracy on the MIMIC-CXR dataset for pneumonia detection.",
-    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3",
-    tags: ["Python", "PyTorch", "Medical Imaging", "TensorFlow", "Flask", "Docker"],
-    github: "https://github.com",
-    demo: "https://demo.example.com",
+    title: "DataWars",
+    description: "At DataWars, our mission is to bridge the gap in Data Science education by offering real-world projects that enrich learning and equip our students with practical skills.",
+    image: "/images/project6.png",
+    tags: ["SQL", "Data Analysis", "Data Cleaning", "Data Visualization", "Python","NoSQL"],
+    demo: "https://www.datawars.io/",
   },
 ]
 
@@ -92,14 +86,9 @@ export function ProjectsSection() {
               </CardContent>
               <CardFooter className="px-6 py-4 border-t bg-muted/20">
                 <div className="flex gap-3 w-full">
-                  <Button asChild variant="outline" size="sm" className="flex-1">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github className="mr-2 h-4 w-4" /> Code
-                    </a>
-                  </Button>
                   <Button asChild size="sm" className="flex-1">
                     <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="mr-2 h-4 w-4" /> Demo
+                      <ExternalLink className="mr-2 h-4 w-4" /> Live
                     </a>
                   </Button>
                 </div>

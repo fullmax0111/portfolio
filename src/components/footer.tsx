@@ -12,9 +12,9 @@ export function Footer() {
       <div className="container mx-auto flex flex-col gap-8">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex flex-col items-center md:items-start space-y-4">
-            <div className="font-bold text-xl">Jane Doe</div>
+            <div className="font-bold text-xl">William Conrad</div>
             <p className="text-sm text-muted-foreground text-center md:text-left">
-              Senior AI Engineer specializing in machine learning, <br />
+              Senior AI & Data Engineer specializing in machine learning, <br />
               deep learning, and artificial intelligence solutions.
             </p>
           </div>
@@ -49,7 +49,7 @@ export function Footer() {
                 <Twitter className="h-5 w-5" />
               </a>
               <a
-                href="mailto:email@example.com"
+                href="mailto:fullmax0111@gmail.com"
                 className="text-muted-foreground hover:text-foreground transition-colors"
                 aria-label="Email"
               >
@@ -62,7 +62,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground border-t pt-8">
           <div>
-            &copy; {currentYear} Jane Doe. All rights reserved.
+            &copy; {currentYear} Willam Conrad. All rights reserved.
           </div>
           <nav className="flex gap-4">
             <Link href="#about" className="hover:text-foreground transition-colors">

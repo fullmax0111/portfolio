@@ -17,13 +17,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jane Doe | Senior AI Engineer Portfolio",
+  title: "William Conrad | Senior AI & Data Engineer Portfolio",
   description: "Portfolio showcasing skills, experience, and projects of a seasoned AI & Machine Learning Engineer",
-  keywords: ["AI Engineer", "Machine Learning", "Portfolio", "Data Science", "Deep Learning", "NLP", "Computer Vision"],
+  keywords: ["AI & Data Engineer", "Machine Learning", "Portfolio", "Data Science", "Deep Learning", "NLP", "Computer Vision"],
   authors: [
     {
-      name: "Jane Doe",
-      url: "https://jane-doe-ai.example.com",
+      name: "William Conrad",
+      url: "https://williamconrad.com",
     },
   ],
   icons: {

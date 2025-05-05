@@ -17,10 +17,10 @@ export function AboutSection() {
         <div className="space-y-6">
           <div className="space-y-2">
             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-              Hi, I'm <span className="text-primary">Jane Doe</span>
+              Hi, I'm <span className="text-primary">William Conrad</span>
             </h1>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-              Senior AI Engineer
+              Senior AI & Data Engineer
             </h2>
             <p className="text-xl text-muted-foreground max-w-md mt-4">
               Transforming complex data into innovative AI solutions with 8+ years of experience in machine learning and artificial intelligence.
@@ -32,7 +32,7 @@ export function AboutSection() {
               <ArrowDownToLine className="mr-2 h-4 w-4" /> Download Resume
             </Button>
             <Button variant="outline" asChild>
-              <a href="mailto:email@example.com">
+              <a href="mailto:fullmax0111@gmail.com">
                 <Mail className="mr-2 h-4 w-4" /> Contact Me
               </a>
             </Button>
@@ -69,19 +69,21 @@ export function AboutSection() {
           </div>
         </div>
 
-        <Card className="overflow-hidden border-none bg-muted/50">
+        <Card className="relative rounded-full overflow-hidden mx-auto">
           <CardContent className="p-0">
-            <div className="relative aspect-square overflow-hidden rounded-lg">
+          <div
+            className="relative rounded-full overflow-hidden mx-auto"
+            style={{ width: 400, height: 400 }}
+          >
             <Image
               src="/images/profile.png"
-              alt="Profile of Jane Doe"
-              width={400}
-              height={400}
+              alt="Profile of William Conrad"
+              fill
               unoptimized
-              className="object-cover w-full h-full"
+              className="object-cover"
               priority
             />
-            </div>
+          </div>
           </CardContent>
         </Card> 
       </div>

@@ -40,18 +40,19 @@ export function Header() {
           : "bg-transparent"
       }`}
     >
-      <div className="container flex items-center justify-between h-16 px-4 md:px-6">
-        <Link href="/" className="font-bold text-xl">
-          AI Engineer
+      <div className="container flex items-center justify-between h-16 px-4 md:px-6" >
+        <Link href="/" className="font-bold text-xl" style={{fontSize: "30px"}}>
+          AI & Data Engineer
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden md:flex items-center gap-6" >
           {navLinks.map((link) => (
             <Link
               key={link.title}
               href={link.href}
               className="text-sm font-medium hover:text-primary transition-colors"
+              style={{fontSize: "20px"}}
             >
               {link.title}
             </Link>
