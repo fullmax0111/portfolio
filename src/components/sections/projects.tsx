@@ -38,14 +38,14 @@ const projects = [
   {
     title: "Third Party Web",
     description: "A comprehensive MLOps platform for automating the entire machine learning lifecycle from data preparation to model deployment and monitoring.",
-    image: "/images/project5.png",
+    image: "/images/project5.PNG",
     tags: ["Data analysis", "Data Visualization", "javascript", "httparchive"],
     demo: "https://www.thirdpartyweb.today/",
   },
   {
     title: "DataWars",
     description: "At DataWars, our mission is to bridge the gap in Data Science education by offering real-world projects that enrich learning and equip our students with practical skills.",
-    image: "/images/project6.png",
+    image: "/images/project6.PNG",
     tags: ["SQL", "Data Analysis", "Data Cleaning", "Data Visualization", "Python","NoSQL"],
     demo: "https://www.datawars.io/",
   },
