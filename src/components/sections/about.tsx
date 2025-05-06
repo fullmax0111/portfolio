@@ -23,19 +23,19 @@ export function AboutSection() {
               Senior AI & Data Engineer
             </h2>
             <p className="text-xl text-muted-foreground max-w-md mt-4">
-              Transforming complex data into innovative AI solutions with 8+ years of experience in machine learning and artificial intelligence.
+            With a passion for AI/ML and Data Engineer, I strive to create solutions that shape the future. I believe technology can change the world, and I’m ready to be part of that change. Analytical Thinking involves a strong ability to break down complex problems into manageable components. Curiosity-Driven Learning appears as a persistent desire to understand "why" and "how" behind phenomena.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <Button onClick={downloadResume} variant="default">
+            {/* <Button onClick={downloadResume} variant="default">
               <ArrowDownToLine className="mr-2 h-4 w-4" /> Download Resume
-            </Button>
-            <Button variant="outline" asChild>
+            </Button> */}
+            {/* <Button variant="outline" asChild>
               <a href="mailto:fullmax0111@gmail.com">
                 <Mail className="mr-2 h-4 w-4" /> Contact Me
               </a>
-            </Button>
+            </Button> */}
           </div>
 
           <div className="flex gap-4 pt-4">

@@ -12,7 +12,7 @@ const projects = [
     description: "The AI Text Humanizer is a specialized tool designed to transform machine-generated content into natural, human-like text while preserving the original meaning and intent. This project aims to bridge the gap between AI efficiency and human authenticity in written communication.",
     image: "/images/project1.PNG",
     tags: ["AI Agent", "LLM", "Prompt Engineering", "Humanizing AI"],
-    demo: "https://ai-text-humanizer.com/",
+    demo: "https://ai-text-humanizer.com",
   },
   {
     title: "Messagin with AI",

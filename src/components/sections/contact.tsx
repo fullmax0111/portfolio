@@ -127,8 +127,8 @@ export function ContactSection() {
                     <Mail className="h-5 w-5 text-primary" />
                     <div>
                       <h4 className="font-medium">Email</h4>
-                      <a href="mailto:jane.doe@example.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                        jane.doe@example.com
+                      <a href="mailto:fullmax0111@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                        fullmax0111@gmail.com
                       </a>
                     </div>
                   </div>
@@ -137,8 +137,8 @@ export function ContactSection() {
                     <Phone className="h-5 w-5 text-primary" />
                     <div>
                       <h4 className="font-medium">Phone</h4>
-                      <a href="tel:+1234567890" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                        +1 (234) 567-890
+                      <a href="tel:+283749583" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                        +1 (283) 749-583
                       </a>
                     </div>
                   </div>
@@ -148,7 +148,7 @@ export function ContactSection() {
                     <div>
                       <h4 className="font-medium">Location</h4>
                       <p className="text-sm text-muted-foreground">
-                        San Francisco, California
+                        Chicago
                       </p>
                     </div>
                   </div>
@@ -156,7 +156,7 @@ export function ContactSection() {
               </CardContent>
             </Card>
 
-            <Card>
+            {/* <Card>
               <CardContent className="pt-6">
                 <h3 className="text-xl font-bold mb-4">Availability</h3>
                 <p className="text-muted-foreground mb-2">
@@ -169,7 +169,7 @@ export function ContactSection() {
                   <li>AI research collaborations</li>
                 </ul>
               </CardContent>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>

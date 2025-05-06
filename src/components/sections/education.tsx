@@ -12,7 +12,7 @@ const education = [
     focus: "Artificial Intelligence & Machine Learning",
     institution: "Stanford University",
     location: "Stanford, CA",
-    period: "2013 - 2016",
+    period: "2017 - 2023",
     description: "Conducted research on deep learning techniques for natural language processing. Dissertation focused on attention mechanisms in sequence-to-sequence models, which has since become foundational to modern NLP architectures.",
     achievements: [
       "Published 7 papers in top-tier conferences (NeurIPS, ICML, ACL)",
@@ -27,7 +27,7 @@ const education = [
     focus: "Computer Science",
     institution: "Massachusetts Institute of Technology",
     location: "Cambridge, MA",
-    period: "2011 - 2013",
+    period: "2015 - 2017",
     description: "Specialized in machine learning and data mining. Completed thesis on optimization methods for large-scale machine learning applications.",
     achievements: [
       "GPA: 3.94/4.0",
@@ -42,7 +42,7 @@ const education = [
     focus: "Applied Mathematics and Computer Science",
     institution: "University of California, Berkeley",
     location: "Berkeley, CA",
-    period: "2007 - 2011",
+    period: "2010 - 2015",
     description: "Double major in Applied Mathematics and Computer Science with a minor in Statistics. Focused on theoretical foundations of machine learning and algorithm design.",
     achievements: [
       "Graduated Summa Cum Laude with a 3.96/4.0 GPA",
@@ -53,6 +53,7 @@ const education = [
     logo: "https://images.unsplash.com/photo-1639762681057-408e52192e55?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3"
   }
 ]
+
 
 // const certifications = [
 //   {
@@ -86,7 +87,7 @@ export function EducationSection() {
     <section id="education" className="py-20 px-4 md:px-6">
       <div className="container mx-auto space-y-12">
         <div className="text-center space-y-2 max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Education & Certifications</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Education</h2>
           <p className="text-muted-foreground text-lg">
             My academic background and professional certifications
           </p>
