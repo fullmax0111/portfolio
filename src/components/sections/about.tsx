@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ArrowDownToLine, Github, Linkedin, Mail, Twitter } from "lucide-react"
+import { TypeAnimation } from 'react-type-animation'
 
 export function AboutSection() {
   const downloadResume = () => {
@@ -22,14 +23,29 @@ export function AboutSection() {
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
               Senior AI & Data Engineer
             </h2>
-            <p className="text-xl text-muted-foreground max-w-md mt-4">
-            With a passion for AI/ML and Data Engineer, I strive to create solutions that shape the future. I believe technology can change the world, and I’m ready to be part of that change. Analytical Thinking involves a strong ability to break down complex problems into manageable components. Curiosity-Driven Learning appears as a persistent desire to understand "why" and "how" behind phenomena.
-            </p>
+            <div className="text-xl text-muted-foreground max-w-md mt-4 min-h-[120px]">
+              <TypeAnimation
+                sequence={[
+                  "With a passion for AI/ML and Data Engineering, I strive to create solutions that shape the future.",
+                  1000,
+                  "I believe technology can change the world, and I'm ready to be part of that change.",
+                  1000,
+                  "Analytical Thinking involves breaking down complex problems into manageable components.",
+                  1000,
+                  "Curiosity-Driven Learning drives my desire to understand the 'why' and 'how' behind phenomena.",
+                  1000,
+                ]}
+                wrapper="p"
+                speed={50}
+                repeat={Infinity}
+                className="text-xl text-muted-foreground"
+              />
+            </div>
           </div>
 
           <div className="flex flex-wrap gap-3">
-          <Button 
-              variant="default"
+            <Button 
+              asChild
               className="
                 bg-gradient-to-r from-blue-500 to-indigo-500
                 text-white font-semibold
@@ -38,7 +54,6 @@ export function AboutSection() {
                 hover:scale-105
                 shadow-lg
               "
-              asChild
             >
               <a 
                 href="/WILLIAM CONRAD.pdf" 
@@ -49,16 +64,16 @@ export function AboutSection() {
                 <ArrowDownToLine className="mr-2 h-4 w-4" /> Check Resume
               </a>
             </Button>
-            {/* <Button variant="outline" asChild>
+            <Button variant="outline" asChild>
               <a href="mailto:fullmax0111@gmail.com">
                 <Mail className="mr-2 h-4 w-4" /> Contact Me
               </a>
-            </Button> */}
+            </Button>
           </div>
 
           <div className="flex gap-4 pt-4">
             <a
-              href="https://github.com"
+              href="https://github.com/fullmax0111"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-foreground transition-colors"
