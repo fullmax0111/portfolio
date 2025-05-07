@@ -46,7 +46,7 @@ export function AboutSection() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <ArrowDownToLine className="mr-2 h-4 w-4" /> Download Resume
+                <ArrowDownToLine className="mr-2 h-4 w-4" /> Check Resume
               </a>
             </Button>
             {/* <Button variant="outline" asChild>
