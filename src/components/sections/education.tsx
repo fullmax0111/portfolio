@@ -55,32 +55,32 @@ const education = [
 ]
 
 
-// const certifications = [
-//   {
-//     name: "Google Cloud Professional Machine Learning Engineer",
-//     issuer: "Google Cloud",
-//     date: "2022",
-//     icon: <Award className="h-8 w-8 text-primary" />
-//   },
-//   {
-//     name: "AWS Certified Machine Learning – Specialty",
-//     issuer: "Amazon Web Services",
-//     date: "2021",
-//     icon: <Award className="h-8 w-8 text-primary" />
-//   },
-//   {
-//     name: "Deep Learning Specialization",
-//     issuer: "Coursera (Andrew Ng)",
-//     date: "2019",
-//     icon: <BookOpen className="h-8 w-8 text-primary" />
-//   },
-//   {
-//     name: "TensorFlow Developer Certificate",
-//     issuer: "Google",
-//     date: "2020",
-//     icon: <Award className="h-8 w-8 text-primary" />
-//   }
-// ]
+const certifications = [
+  {
+    name: "Google Cloud Professional Machine Learning Engineer",
+    issuer: "Google Cloud",
+    date: "2022",
+    icon: <Award className="h-8 w-8 text-primary" />
+  },
+  {
+    name: "AWS Certified Machine Learning – Specialty",
+    issuer: "Amazon Web Services",
+    date: "2021",
+    icon: <Award className="h-8 w-8 text-primary" />
+  },
+  {
+    name: "Deep Learning Specialization",
+    issuer: "Coursera (Andrew Ng)",
+    date: "2019",
+    icon: <BookOpen className="h-8 w-8 text-primary" />
+  },
+  {
+    name: "TensorFlow Developer Certificate",
+    issuer: "Google",
+    date: "2020",
+    icon: <Award className="h-8 w-8 text-primary" />
+  }
+]
 
 export function EducationSection() {
   return (
@@ -142,7 +142,7 @@ export function EducationSection() {
         </div>
 
         {/* Certifications */}
-        {/* <div className="space-y-6">
+        <div className="space-y-6">
           <h3 className="text-2xl font-bold flex items-center gap-2">
             <Award className="h-6 w-6 text-primary" /> Certifications
           </h3>
@@ -162,7 +162,7 @@ export function EducationSection() {
               </Card>
             ))}
           </div>
-        </div> */}
+        </div>
       </div>
     </section>
   )
