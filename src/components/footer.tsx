@@ -22,7 +22,7 @@ export function Footer() {
           <div className="flex flex-col items-center md:items-end space-y-4">
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/fullmax0111"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
