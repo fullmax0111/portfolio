@@ -28,9 +28,27 @@ export function AboutSection() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            {/* <Button onClick={downloadResume} variant="default">
-              <ArrowDownToLine className="mr-2 h-4 w-4" /> Download Resume
-            </Button> */}
+          <Button 
+              variant="default"
+              className="
+                bg-gradient-to-r from-blue-500 to-indigo-500
+                text-white font-semibold
+                hover:from-blue-600 hover:to-indigo-600
+                transition-all duration-200
+                hover:scale-105
+                shadow-lg
+              "
+              asChild
+            >
+              <a 
+                href="/WILLIAM CONRAD.pdf" 
+                // download="William_Conrad_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ArrowDownToLine className="mr-2 h-4 w-4" /> Download Resume
+              </a>
+            </Button>
             {/* <Button variant="outline" asChild>
               <a href="mailto:fullmax0111@gmail.com">
                 <Mail className="mr-2 h-4 w-4" /> Contact Me

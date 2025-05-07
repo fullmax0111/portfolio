@@ -15,7 +15,7 @@ const projects = [
     demo: "https://ai-text-humanizer.com",
   },
   {
-    title: "Messagin with AI",
+    title: "Messaging with AI",
     description: "Mei’s technology upgrades messaging with AI, so people can better connect with each other. Our products have powered communications for over a million people and businesses by enabling AI in channels you already use, like SMS texting, phone calls, email, websites, and messenger apps. ",
     image: "/images/project2.PNG",
     tags: ["Android", "AI Agent", "Chatbot", "GenAI"],
