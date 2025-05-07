@@ -11,7 +11,7 @@ const skillCategories = [
     skills: [
       "TensorFlow/Keras", "PyTorch", "Scikit-Learn", "Deep Learning",
       "Computer Vision", "NLP", "Reinforcement Learning", "GANs",
-      "Transformer Models", "LLMs"
+      "Transformer Models", "LLMs","RAG","AI Agents","Power BI"
     ]
   },
   {
