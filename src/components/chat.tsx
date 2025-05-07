@@ -5,7 +5,11 @@ export default function Chat() {
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null); // Add ref for input field
 
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, [messages]);
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
@@ -100,12 +104,14 @@ export default function Chat() {
       </div>
       <div className="flex gap-2">
         <input
+          ref={inputRef}
           className="flex-1 rounded-lg border px-3 py-2 text-sm focus:outline-none focus:ring focus:border-primary"
           value={input}
           onChange={e => setInput(e.target.value)}
           onKeyDown={e => e.key === "Enter" && sendMessage()}
           placeholder="Type your question..."
           disabled={loading}
+          autoFocus
         />
         <button
           className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold shadow hover:bg-primary/90 transition disabled:opacity-50"

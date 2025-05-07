@@ -257,11 +257,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       - Projects: ${projects}
       - Skills : ${skills}
       - Testimonials: ${testimonials}
+      - Phone Number : +1 (283) 749-583
+      - Email : fullmax0111@gmail.com
       Answer user questions based on this information.
       `;
 
     const payload = {
-      model: "gpt-4o-mini",
+      model: "gpt-4o",
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: message }
