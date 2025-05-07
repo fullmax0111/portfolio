@@ -12,7 +12,7 @@ const education = [
     focus: "Artificial Intelligence & Machine Learning",
     institution: "Stanford University",
     location: "Stanford, CA",
-    period: "2017 - 2023",
+    period: "2017 - 2019",
     description: "Conducted research on deep learning techniques for natural language processing. Dissertation focused on attention mechanisms in sequence-to-sequence models, which has since become foundational to modern NLP architectures.",
     achievements: [
       "Published 7 papers in top-tier conferences (NeurIPS, ICML, ACL)",
