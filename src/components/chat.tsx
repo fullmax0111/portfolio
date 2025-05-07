@@ -1,7 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
+import { Trash2 } from "lucide-react";
 
 export default function Chat() {
-  const [messages, setMessages] = useState<{ from: "user" | "bot"; text: string; isStreaming?: boolean }[]>([]);
+  const [messages, setMessages] = useState<{ from: "user" | "bot"; text: string; isStreaming?: boolean }[]>(() => {
+    if (typeof window !== 'undefined') {
+      const savedMessages = localStorage.getItem('chatHistory');
+      return savedMessages ? JSON.parse(savedMessages) : [];
+    }
+    return [];
+  });
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
   const chatEndRef = useRef<HTMLDivElement>(null);
@@ -13,6 +20,16 @@ export default function Chat() {
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [messages, loading]);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('chatHistory', JSON.stringify(messages));
+    }
+  }, [messages]);
+
+  const clearHistory = () => {
+    setMessages([]);
+  };
 
   const sendMessage = async () => {
     if (!input.trim()) return;
@@ -75,7 +92,20 @@ export default function Chat() {
 
   return (
     <div className="flex flex-col h-full max-h-[80vh]">
-      <div className="flex-1 overflow-y-auto space-y-2 p-2 bg-muted rounded mb-2">
+        {messages.length > 0 && (
+          <div className="absolute top-2 right-8 z-10">
+            <button
+              onClick={clearHistory}
+              className="p-2 text-muted-foreground hover:text-foreground transition-colors rounded-full hover:bg-muted"
+              title="Clear History"
+            >
+              <Trash2 className="w-4 h-4" />
+            </button>
+          </div>
+        )}
+      <div className="flex-1 overflow-y-auto space-y-2 p-2 bg-muted rounded mb-2 relative">
+
+        
         {messages.length === 0 && (
           <div className="text-center text-muted-foreground mt-8">
             👋 Ask me anything about my experience, skills, or projects!
@@ -111,7 +141,6 @@ export default function Chat() {
           onKeyDown={e => e.key === "Enter" && sendMessage()}
           placeholder="Type your question..."
           disabled={loading}
-          autoFocus
         />
         <button
           className="bg-primary text-primary-foreground px-4 py-2 rounded-lg font-semibold shadow hover:bg-primary/90 transition disabled:opacity-50"
